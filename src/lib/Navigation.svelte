@@ -77,7 +77,7 @@ nav ul:nth-child(2) {
   padding: 3rem 0;
   width: calc(100% + 2rem);
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: calc(-3rem - 100%);
   display: flex;
@@ -87,7 +87,7 @@ nav ul:nth-child(2) {
   transition: 450ms cubic-bezier(0, 0.62, 0.57, 1.02);
   z-index: 2;
   font-size: 1rem;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
 
   @media (min-width: 1024px) {
     position: relative;
@@ -99,6 +99,7 @@ nav ul:nth-child(2) {
     width: 75%;
     padding: 2rem 0 2rem 16%;
     font-size: 0.9rem;
+    background-color: transparent;
   }
 
   @media (min-width: 1440px) {
