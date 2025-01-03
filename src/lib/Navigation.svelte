@@ -106,8 +106,23 @@
     border-radius: var(--radius-btn);
     border: none;
     text-shadow: 0 0 .5rem rgba(0 0 0 0.25);
+    font-family: var(--font-text);
+    font-weight: var(--font-bold);
 	}
 
+  nav ul:nth-child(1) button::before,
+  nav ul:nth-child(1) button::after {
+    content: "";
+    position: absolute;
+    top: -3px;
+    left: -3px;
+    background: var(--silver-horizontal);
+    width: calc(100% + 6px);
+    height: calc(100% + 6px);
+    border-radius: var(--radius-btn-border);
+    z-index: -1;
+    box-shadow: 0 0 30px var(--silver-diagonal);
+  }
   nav ul:nth-child(1) button::before,
   nav ul:nth-child(1) button::after {
     content: "";

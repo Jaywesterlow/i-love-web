@@ -16,10 +16,10 @@
         width: 100%;
         background: var(--bg);
         border-radius: 1.563rem;
-        padding: 3.125rem 5%;
+        padding: 6.125rem 5%;
     }
 
-    @media screen and (min-width: 768px) {
+    @media screen and (min-width: 425px) {
         main {
             border-radius: 1.875rem;
             padding: 1rem 3.125rem 1rem;
