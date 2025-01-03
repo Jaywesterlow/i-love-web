@@ -1,41 +1,35 @@
 <script>
-    import { Navigation } from "$lib";
+    import { Navigation, Hero } from "$lib";
 
 </script>
 
 <Navigation />
 
 <main>
-    <article>
-        <h1>Hey, This is currently still under construction! 🚧</h1>
-        <p>but you can view the I Love Web page <a href="i-love-web">here!</a></p>
-    </article>
+    <Hero />
 </main>
+
+
 
 <style>
     main {
-        height: 70%;
         width: 100%;
-        display: flex;
-        flex-direction: column;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-        font-family: var(--font-title);
-        color: var(--white);
-        font-size: .8rem;
+        background: var(--bg);
+        border-radius: 1.563rem;
+        padding: 3.125rem 5%;
+    }
 
-        @media (min-width: 1024px) {
-            font-size: 1.5rem;
+    @media screen and (min-width: 768px) {
+        main {
+            border-radius: 1.875rem;
+            padding: 1rem 3.125rem 1rem;
         }
     }
 
-    main article h1 {
-        margin-bottom: 1rem;
-    }
-
-    main article p a {
-        text-decoration: none;
-        color: cornflowerblue;
+    @media screen and (min-width: 1024px) {
+        main {
+            border-radius: 2.5rem;
+            padding: 1rem 10%;
+        }
     }
 </style>

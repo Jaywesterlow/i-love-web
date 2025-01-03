@@ -8,9 +8,8 @@
 
   --bg: #1D1D1D;
 
-  --light-blue: #f7fdff;
-  --light-pink: #fff7fc;
-
+  /* Gradients */
+  --silver-diagonal: linear-gradient(145deg, rgba(255,255,255,1) 0%, rgba(121,121,121,1) 100%);
   --silver-vertical: linear-gradient(180deg, rgba(255, 255, 255, 1) 45%, rgba(121, 121, 121, 1) 100%);
   --silver-horizontal: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(121, 121, 121, 1) 100%);
 
@@ -24,6 +23,10 @@
 
   /* shadows */
   --shadow-regular: 0px 0px 15px 7.5px rgba(0, 0, 0, 0.25);
+
+  /* rem values */
+  --radius-btn: .2rem;
+  --radius-btn-border: .35rem;
 }
 
 * {
@@ -41,4 +44,14 @@ body {
 
 body {
   background-color: var(--bg);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-title);
+  font-weight: var(--font-bold);
+  color: var(--white);
+}
+
+h1 {
+  font-size: 2rem;
 }
