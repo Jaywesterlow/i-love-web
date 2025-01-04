@@ -6,7 +6,7 @@
 	<h1>Jaymar Westerlow, Web designer- & Developer</h1>
 
   <ul>
-    <li><Svg name="portrait" /></li>
+    <li><img src="/portrait.png"/></li>
     <li><Svg name="logo" /></li>
     <li>WEB DESIGNER</li>
     <li>& DEVELOPER</li>
@@ -15,8 +15,8 @@
   <div>
     <ul>
       <li>CONNECT WITH ME:</li>
-      <li>Insta</li>
-      <li>Link</li>
+      <li><Svg name="instagram" /></li>
+      <li><Svg name="linkedin" /></li>
     </ul>
 
     <article>
@@ -32,6 +32,10 @@
 
 <style>
   section {
+    min-height: 80dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
   }
   
   section h1 {
@@ -51,6 +55,10 @@
     @media (min-width: 500px) {
       font-size: 2.5rem;
     }
+    
+    @media (min-width: 1024px) {
+      font-size: 3.5rem;
+    }
   }
 
   section > ul > li:nth-child(1) {
@@ -62,11 +70,18 @@
   }
 
   section > ul > li:nth-child(3) {
-    margin: 0 auto .5rem 0;
+    margin: 0 0 .5rem -25%;
+    @media (min-width: 1024px) {
+      margin: 0 .5rem 0 -15%;
+    }
   }
 
   section > ul > li:nth-child(4) {
-    margin: 0 0 0 auto;
+    margin: 0 -25% 0 0;
+    
+    @media (min-width: 1024px) {
+      margin: 0 -15% 0 0;
+    }
   }
 
   /* Hero Content Div */
@@ -98,13 +113,16 @@
       display: flex;
       align-items: center;
     }
-    
   }
   
+  section > div > ul > li:not(:last-child){
+    margin: 0 1rem 0 0;
+  }
+
   section > div > ul > li:nth-child(2){
     display: flex;
     place-items: center;
-    padding: 1rem;
+    padding: .75rem;
     aspect-ratio: 1;
 
     background: var(--container-bg);
@@ -115,7 +133,7 @@
   section > div > ul > li:nth-child(3){
     display: flex;
     place-items: center;
-    padding: 1rem;
+    padding: .75rem;
     aspect-ratio: 1;
 
     background: var(--container-bg);
@@ -124,7 +142,6 @@
   }
 
   /* About */
-
   section > div > article {
     display: none;
     @media (min-width: 1024px) {

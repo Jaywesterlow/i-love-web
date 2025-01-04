@@ -12,7 +12,7 @@
   --cream-diagonal: linear-gradient(145deg, rgb(239, 239, 239) 0%, rgb(233, 194, 139) 100%);
   --cream-horizontal: linear-gradient(90deg, rgba(239, 239, 239, 1) 0%, rgb(233, 194, 139, 1) 100%);
 
-  --silver-diagonal: linear-gradient(145deg, rgba(255,255,255,1) 0%, rgba(121,121,121,1) 100%);
+  --silver-diagonal: linear-gradient(145deg, rgba(255, 255, 255, 1) 0%, rgba(121, 121, 121, 1) 100%);
   --silver-vertical: linear-gradient(180deg, rgba(255, 255, 255, 1) 45%, rgba(121, 121, 121, 1) 100%);
   --silver-horizontal: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(121, 121, 121, 1) 100%);
 
@@ -55,7 +55,10 @@ body {
 }
 
 /* Fonts */
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: var(--font-title);
   font-weight: var(--font-bold);
   color: var(--white);
@@ -66,6 +69,10 @@ h1 {
 }
 
 /* Padding */
+nav {
+  padding: 1rem 5% .5rem 5%;
+}
+
 main {
   width: 100%;
   background: var(--bg);
@@ -73,17 +80,18 @@ main {
   padding: 6.125rem 5%;
 }
 
+
+
 @media screen and (min-width: 425px) {
   main {
-      border-radius: 1.875rem;
-      padding: 1rem 3.125rem 1rem;
+    border-radius: 1.875rem;
+    padding: 1rem 8% 1rem;
   }
 }
 
 @media screen and (min-width: 1024px) {
   main {
-      border-radius: 2.5rem;
-      padding: 1rem 10%;
+    border-radius: 2.5rem;
+    padding: 1rem 10%;
   }
 }
-
