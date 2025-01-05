@@ -122,7 +122,7 @@
 
 	@media (min-width: 768px) {
 		:root {
-			--socials-scale: calc(29px * 1.2);
+			--socials-scale: calc(29px * .7);
 		}
 	}
 
