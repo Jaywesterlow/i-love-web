@@ -58,10 +58,12 @@
 		transition: 0.3s ease;
 		z-index: 1000;
 		min-height: 87px;
-	}
 
-	@media (min-width: 1024px) {
-		#navbar {
+		@media (min-width: 425px) {
+			padding: 1rem 8% .5rem;
+		}
+		
+		@media (min-width: 1024px) {
 			display: flex;
 			justify-content: center;
 			align-items: center;

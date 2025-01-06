@@ -109,6 +109,13 @@
 		</defs>
 	</svg>
 
+	{:else if name == 'down-chevron'}
+	
+	<svg width="38" height="23" viewBox="0 0 38 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+		<path d="M0.666672 3.71248L3.92084 0.458312L19 15.5375L34.0792 0.458313L37.3333 3.71248L19 22.0458L0.666672 3.71248Z" fill="white"/>
+	</svg>
+		
+	
 	<!-- {:else if name == ''} -->
 {/if}
 

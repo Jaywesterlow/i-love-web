@@ -1,5 +1,12 @@
 <script>
 	import { Svg } from '$lib';
+
+  const scrollToSection = () => {
+    window.scrollTo({
+      top: window.innerHeight,
+      behavior: 'smooth'
+    });
+  };
 </script>
 
 <section>
@@ -15,8 +22,8 @@
   <div>
     <ul>
       <li>CONNECT WITH ME:</li>
-      <li><Svg name="instagram" /></li>
-      <li><Svg name="linkedin" /></li>
+      <li><a href="https://www.instagram.com/jaywesterlow/" target="_blank"><Svg name="instagram" /></a></li>
+      <li><a href="https://www.linkedin.com/in/jaymarwesterlow/" target="_blank"><Svg name="linkedin" /></a></li>
     </ul>
 
     <article>
@@ -33,7 +40,9 @@
       <button>CONTACT ME</button>
     </aside>
   </div>
-  <button></button>
+  <button on:click={scrollToSection}>
+    <Svg name="down-chevron"/>
+  </button>
 </section>
 
 <style>
@@ -51,7 +60,7 @@
     }
     
     @media (min-width: 1440px) {
-      padding: 14rem 0 1rem;
+      padding: 12rem 0 1rem;
     }
   }
   
@@ -184,7 +193,7 @@
     justify-content: center;
     
     @media (min-width: 768px) {
-      justify-content: space-around;
+      justify-content: space-between;
       padding-top: 4rem;
 
       & > * {
@@ -193,8 +202,7 @@
     }
 
     @media (min-width: 1024px) {
-      padding-top: 10rem;
-      justify-content: space-between;
+      padding-top: 8rem;
 
       & > * {
         max-width: 30%;
@@ -202,7 +210,7 @@
     }
 
     @media (min-width: 1440px) {
-      padding-top: 11rem;
+      padding-top: 9.5rem;
     }
   }
   
@@ -224,10 +232,11 @@
   
   section > div > ul > li:nth-child(1) {
     min-width: 155px;
+    margin-bottom: -5px;
   }
 
-  section > div > ul > li:nth-child(2),
-  section > div > ul > li:nth-child(3) {
+  section > div > ul > li:nth-child(2) a,
+  section > div > ul > li:nth-child(3) a {
     display: flex;
     place-items: center;
     padding: .6rem;
@@ -304,9 +313,39 @@
     background: var(--cream-horizontal);
   }
 
-/* ----------------------------------------------------- */
+/* Scroll down indicator (button) */
   section > button {
+    position: relative;
+    width: 10rem;
+    background: none;
+    border: none;
+    align-self: center;
+    transition: .3s all ease-in-out;
+    padding: .8rem 1rem 0;
+  }
+  
+  section > button::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -.6rem;
+    width: 5rem;
+    height: 4px;
+    background: var(--white);
+    border-radius: 1px;
+    transition: .3s all ease-in-out;
+  }
+  section > button:hover {
+    cursor: pointer;
+    margin-bottom: -.4rem;
+    margin-top: .4rem;
+  }
 
+  section > button:hover::after {
+    content: "";
+    width: 8rem;
+    bottom: -.2rem;
   }
 
 </style>
