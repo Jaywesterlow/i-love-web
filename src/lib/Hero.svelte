@@ -60,6 +60,10 @@
     }
     
     @media (min-width: 1440px) {
+      padding: 7rem 0 1rem;
+    }
+
+    @media (min-width: 1920px) {
       padding: 12rem 0 1rem;
     }
   }
@@ -92,6 +96,10 @@
     }
     
     @media (min-width: 1440px) {
+      font-size: 3.5rem;
+    }
+
+    @media (min-width: 1920px) {
       font-size: 5.5rem;
     }
   }
@@ -116,6 +124,12 @@
     }
     
     @media (min-width: 1440px) {
+      & img {
+        max-width: 5.5rem;
+      }
+    }
+
+    @media (min-width: 1920px) {
       width: calc(30% - .5rem);
       
       & img {
@@ -141,6 +155,12 @@
       }
 
       @media (min-width: 1440px) {
+        & img {
+          max-width: 5.5rem;
+        }
+      }
+
+      @media (min-width: 1920px) {
         width: calc(30% - .5rem);
         & img {
           max-width: 7rem;
@@ -159,7 +179,7 @@
       justify-content: flex-end;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: 1920px) {
       width: calc(70% - .5rem);
     }
   }
@@ -175,11 +195,7 @@
       justify-content: flex-start;
     }
 
-    @media (min-width: 1440px) {
-      width: calc(70% - .5rem);
-    }
-    
-    @media (min-width: 1440px) {
+    @media (min-width: 1920px) {
       width: calc(70% - .5rem);
     }
   }
@@ -210,6 +226,10 @@
     }
 
     @media (min-width: 1440px) {
+      padding-top: 7.5rem;
+    }
+
+    @media (min-width: 1920px) {
       padding-top: 9.5rem;
     }
   }
@@ -256,12 +276,13 @@
 
     @media (min-width: 1024px) {
       display: block;
+      max-width: 25%;
     }
 
     & p span {
       display: none;
 
-      @media (min-width: 1300px) {
+      @media (min-width: 1920px) {
         display: inline;
       }
     }
