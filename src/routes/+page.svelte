@@ -1,5 +1,5 @@
 <script>
-    import { Navigation, Hero } from "$lib";
+    import { Navigation, Hero, LoveWeb } from "$lib";
 
 </script>
 
@@ -7,6 +7,8 @@
 
 <main>
     <Hero />
+
+    <LoveWeb />
 </main>
 
 <style>

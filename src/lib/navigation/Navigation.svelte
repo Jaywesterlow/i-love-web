@@ -73,7 +73,7 @@
 	}
 
 	:global(#navbar.sticky) {
-		/* position: sticky !important; */
+		background: var(--bg) !important;
 		transition: 0.3s ease !important;
 		padding-top: .5rem !important;
 		padding-bottom: .25rem !important;
