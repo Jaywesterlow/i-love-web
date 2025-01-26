@@ -68,6 +68,11 @@ h1 {
   font-size: 2rem;
 }
 
+p {
+  color: var(--white);
+  font-family: var(--font-text);
+}
+
 /* Padding */
 nav {
   padding: 1rem 5% .5rem 5%;

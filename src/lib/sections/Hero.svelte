@@ -13,8 +13,8 @@
 	<h1>Jaymar Westerlow, Web designer- & Developer</h1>
 
   <ul>
-    <li><img src="/portrait.png"/></li>
-    <li><img src="/jvv.png"/></li>
+    <li><img src="/images/portrait.png"/></li>
+    <li><img src="/images/jvv.png"/></li>
     <li>WEB DESIGNER</li>
     <li>& DEVELOPER</li>
   </ul>
@@ -63,7 +63,7 @@
       padding: 7rem 0 1rem;
     }
 
-    @media (min-width: 1920px) {
+    @media (min-width: 1800px) {
       padding: 12rem 0 1rem;
     }
   }
@@ -99,7 +99,7 @@
       font-size: 3.5rem;
     }
 
-    @media (min-width: 1920px) {
+    @media (min-width: 1800px) {
       font-size: 5.5rem;
     }
   }
@@ -129,7 +129,7 @@
       }
     }
 
-    @media (min-width: 1920px) {
+    @media (min-width: 1800px) {
       width: calc(30% - .5rem);
       
       & img {
@@ -160,7 +160,7 @@
         }
       }
 
-      @media (min-width: 1920px) {
+      @media (min-width: 1800px) {
         width: calc(30% - .5rem);
         & img {
           max-width: 7rem;
@@ -179,7 +179,7 @@
       justify-content: flex-end;
     }
 
-    @media (min-width: 1920px) {
+    @media (min-width: 1800px) {
       width: calc(70% - .5rem);
     }
   }
@@ -195,7 +195,7 @@
       justify-content: flex-start;
     }
 
-    @media (min-width: 1920px) {
+    @media (min-width: 1800px) {
       width: calc(70% - .5rem);
     }
   }
@@ -229,7 +229,7 @@
       padding-top: 7.5rem;
     }
 
-    @media (min-width: 1920px) {
+    @media (min-width: 1800px) {
       padding-top: 9.5rem;
     }
   }
@@ -282,7 +282,7 @@
     & p span {
       display: none;
 
-      @media (min-width: 1920px) {
+      @media (min-width: 1800px) {
         display: inline;
       }
     }
